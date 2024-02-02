@@ -1,0 +1,22 @@
+<%- include ("../templates/encabezado.ejs") %> 
+
+<div class="container mt-5" style="display: flex; justify-content: center; align-items: center; height: 500px;">
+    <form action="/nuevoUsuario" method="post" enctype="multipart/form-data">
+        <div class="card">
+            <div class="card-header">
+                <h1>Nuevo Usuario</h1>
+            </div>
+            <div class="card-body">
+                <input class="form-control mb-3" type="text" name="nombre" placeholder="Nombre" autofocus>
+                <input class="form-control mb-3" type="text" name="usuario" placeholder="Usuario">
+                <input class="form-control mb-3" type="password" name="password" placeholder="Password">
+                <input class="form-control mb-3" type="file" name="foto" id="foto">
+            </div>
+            <div class="card-footer">
+                <button type="submit" class="form-control btn btn-primary">Guardar usuario</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+<%- include ("../templates/pie.ejs") %> 

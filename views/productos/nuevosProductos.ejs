@@ -1,0 +1,23 @@
+<%- include ("../templates/encabezado.ejs") %> 
+<%- include ("../templates/menu.ejs") %> 
+
+<div class="container mt-5">
+    <form action="/Productos/nuevoProducto" method="post" enctype="multipart/form-data">
+        <div class="card">
+            <div class="card-header">
+                <h1>Nuevo Producto</h1>
+            </div>
+            <div class="card-body">
+                <input class="form-control mb-3" type="text" name="nombreP" placeholder="Nombre Producto" autofocus>
+                <input class="form-control mb-3" type="text" name="cantidad" placeholder="Cantidad">
+                <input class="form-control mb-3" type="text" name="numSerie" placeholder="Numero de Serie">
+                <input class="form-control mb-3" type="file" name="foto" id="foto">
+            </div>
+            <div class="card-footer">
+                <button type="submit" class="form-control btn btn-primary">Guardar Producto</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+<%- include ("../templates/pie.ejs") %> 
